@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brallium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Brallium Logo"></a>
+    </div> <!-- Closing div for logo -->
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="purchase.html">Shop</a></li>
+            <li><a href="material.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="campaign.html">Blog</a></li>
+        </ul>
+    </nav>
+    
+    <div class="currency-cart">
+        <div class="currency-selection">
+            <img src="img/Us.png" alt="US Flag">
+            <span>USD ($)</span>
+        </div>
+        <div class="user-icons">
+            <img src="img/User.png" alt="User Icon">
+            <div class="cart-container">
+                <img src="img/Cart.png" alt="Cart Icon" class="cart-icon">
+                <span class="cart-count">0</span> <!-- Cart item count -->
+            </div>
+        </div>
+    </div>
+</header>   
+
+    <main>
+        <section class="hero">
+            <div class="text-content">
+                <h1>Welcome to Brallium</h1>
+                <p>We don't just cover. We protect.</p>
+                <p>At Brallium, we aim to create sustainable, reusable, and multifunctional nipple covers wearable by anyone and everyone.</p>
+                <p>Our nipple covers are made out of biodegradable and bacteria-resistant material, protecting not just your skin, but the environment.</p>
+                <div class="buttons">
+                  <button class="shop-all">
+                    <a href="purchase.html">SHOP ALL</a>
+                  </button>
+                  <button class="about-us">
+                    <a href="material.html">ABOUT US</a>
+                  </button>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="img/Standard ver.jpg" alt="Product Image">
+            </div>
+        </section>
+        <section class="sustainability">
+          <div class="pledge-container">
+            <div class="pledge-item">
+              <img src="img/Vector.png" alt="Eco-Friendly">
+              <p>Biodegrade & Eco-Friendly</p>
+            </div>
+            <div class="pledge-item">
+              <img src="img/Frame 119.png" alt="Reduce Emissions">
+              <p>Reduce CO2 Emissions</p>
+            </div>
+            <div class="pledge-item">
+              <img src="img/Vector (1).png" alt="Conserve Water">
+              <p>Conserve Water</p>
+            </div>
+            <div class="pledge-text">
+              <h3>Brallium's pledge to sustainability.</h3>
+              <p>We're dedicated to maintaining our planet's health and natural resources by taking important steps.</p>
+              <a href="#" class="learn-more">LEARN MORE</a>
+            </div>
+          </div>
+        </section>
+        
+        <section class="products">
+          <h2>Our Products</h2>
+          <div class="product-grid">
+            <div class="product-card">
+              <img src="img/Standard ver.jpg" alt="Standard Nipple Cover">
+              <p><strong>STANDARD NIPPLE COVER</strong></p>
+              <p><em>The Original.</em> Light, seamless, versatile.</p>
+              <span class="price">$16.99</span>
+              <p>PACK OF 5</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="product-card">
+              <img src="img/Thickened ver.jpg" alt="Thickened Nipple Cover">
+              <p><strong>THICKENED NIPPLE COVER</strong></p>
+              <p><em>Same quality, more protection.</em> Thicker, enhanced silhouette, high coverage.</p>
+              <span class="price">$16.99</span>
+              <p>PACK OF 5</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="product-card">
+              <img src="img/fragrant1.jpg" alt="Fragrant Nipple Cover">
+              <p><strong>FRAGRANT NIPPLE COVER</strong></p>
+              <p><em>Infused with the essence of Brallium.</em> Perfumed, body odor masker, mood booster.</p>
+              <span class="price">$16.99</span>
+              <p>PACK OF 5</p>
+              <button class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </section>
+        
+        <section class="reviews">
+          <div class="review-content">
+            <div class="image-container">
+              <img src="img/Vector (2).png" alt="Globe Illustration">
+            </div>
+            <div class="review-text">
+              <h2>What People Think About Us</h2>
+              <div class="review">
+                <h4>SAHITHI L'S REVIEW</h4>
+                <p>Thickened Nipple Cover</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>
+                  These nipple covers are some of the best I've ever tried! It's even better that the material is biodegradable. They have never slipped and I feel secure and comfortable wearing them. They’ve definitely become a staple in my wardrobe!
+                </p>
+                <a href="purchase.html" class="see-product">SEE PRODUCT</a>
+              </div>
+            </div>
+          </div>
+        </section>       
+    </main>
+
+         <!-- Cart Modal -->
+         <div id="cart-modal" class="cart-modal">
+          <div class="cart-modal-content">
+              <span class="close-btn">&times;</span>
+              <h2>Your Cart</h2>
+              <div class="cart-items">
+                  <!-- Cart items will be dynamically added here -->
+              </div>
+              <button class="checkout-btn">Checkout</button>
+          </div>
+      </div>
+      
+<footer class="newsletter-footer">
+  <div class="footer-content">
+    <div class="footer-texts">
+      <img src="img/logo.png" alt="Brallium Logo" class="footer-logo">
+      <h2>Sign up for our email newsletter!</h2>
+      <p>Stay updated on the latest updates, deals, and more from Brallium. <br><em>No spam, we promise. Unsubscribe at any time.</em></p>
+      <div class="email-input">
+        <input type="email" placeholder="Type your email here">
+        <button type="submit">
+          <img src="img/arrow.png" alt="Submit">
+        </button>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Terms & Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="purchase.html">Shop</a></li>
+            <li><a href="material.html">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="campaign.html">Blog</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Cart</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="img/Icon.png" alt="Instagram"></a>
+          <a href="#"><img src="img/tiktok.png" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add the image to the right side -->
+    <div class="footer-image">
+      <img src="img/Group 20.png" alt="Footer Image">
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 Brallium. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Service</a></p>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('.email-input button').addEventListener('click', function(e) {
+          e.preventDefault();
+          const newsletterEmail = document.querySelector('.email-input input').value.trim();
+          if (newsletterEmail && validateEmail(newsletterEmail)) {
+              fetch('https://script.google.com/macros/s/AKfycbzY01VQBhoim0Apv3fGHXJCud7biLlN3aFfV2Ssd0WOdl6xfx0QIfEYbGYFuA3OTBWipw/exec', {
+                  method: 'POST',
+                  mode: 'no-cors',
+                  headers: {
+                      'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({ email: newsletterEmail })
+              })
+              .then(() => alert('Thank you for subscribing!'))
+              .catch(error => console.error('Error:', error));
+          } else {
+              alert('Please enter a valid email address.');
+          }
+      });
+
+      function validateEmail(email) {
+          const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return re.test(String(email).toLowerCase());
+      }
+  });
+
+  let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  let cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
+  function addToCart() {
+      const quantity = parseInt(document.querySelector('.quantity-selector input').value);
+      const product = { name: "Thickened Nipple Cover", price: 16.99, quantity: quantity };
+      cartItems.push(product);
+      cartCount += quantity;
+      updateCartIcon();
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      alert('Product added to cart!');
+  }
+
+  function updateCartIcon() {
+      document.querySelector('.cart-count').textContent = cartCount;
+  }
+
+  function showCartItems() {
+      const cartItemsContainer = document.querySelector('.cart-items');
+      cartItemsContainer.innerHTML = '';
+      cartItems.forEach(item => {
+          const itemElement = document.createElement('div');
+          itemElement.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+          cartItemsContainer.appendChild(itemElement);
+      });
+  }
+
+  const cartModal = document.getElementById('cart-modal');
+  const cartIcon = document.querySelector('.cart-icon');
+  const closeBtn = document.querySelector('.close-btn');
+
+  cartIcon.addEventListener('click', () => {
+      showCartItems();
+      cartModal.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', () => cartModal.style.display = 'none');
+  window.addEventListener('click', (e) => {
+      if (e.target == cartModal) cartModal.style.display = 'none';
+  });
+
+  document.addEventListener('DOMContentLoaded', updateCartIcon);
+</script>
+</body>
+</html>

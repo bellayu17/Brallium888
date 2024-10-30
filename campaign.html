@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Page</title>
+    <link rel="stylesheet" href="campaign.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Brallium Logo"></a>
+        </div> <!-- Closing div for logo -->
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="purchase.html">Shop</a></li>
+                <li><a href="material.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="campaign.html">Blog</a></li>
+            </ul>
+        </nav>
+        
+        <div class="currency-cart">
+            <div class="currency-selection">
+                <img src="img/Us.png" alt="US Flag">
+                <span>USD ($)</span>
+            </div>
+            <div class="user-icons">
+                <img src="img/User.png" alt="User Icon">
+                <div class="cart-container">
+                    <img src="img/Cart.png" alt="Cart Icon" class="cart-icon">
+                    <span class="cart-count">0</span> <!-- Cart item count -->
+                </div>
+            </div>
+        </div>
+    </header>      
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="img/carousel4.png" alt="Campaign Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousle2.JPG" alt="Campaign Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel3.png" alt="Campaign Image 3">
+            </div>
+        </div>
+        <!-- Dots for navigating to specific slide -->
+        <div class="dots">
+            <span class="dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+<div class="blog-container">
+    <div class="blog-item">
+        <img src="img/size.png" alt="Blog 1">
+        <h2>For bra beginners</h2>
+        <h3>How do I know my size?</h3>
+        <p>Here's our one-of-a-kind bra size calculator to help you find your true-to-size..</p>
+        <a href="sizecalculator.html" class="read-more">READ MORE</a>
+        <div class="icons">
+            <span class="likes" data-blog="1">❤️ <span id="like-count-1">2487</span></span>
+        </div>
+    </div>
+    <div class="blog-item">
+        <img src="img/shape.jpg" alt="Blog 2">
+        <h2>For ALL age</h2>
+        <h3>Shape Matters: Here's Why</h3>
+        <p>Here's our innovative shape calculator for your customized analysis..</p>
+        <a href="shapecalculator.html" class="read-more">READ MORE</a>
+        <div class="icons">
+            <span class="likes" data-blog="2">❤️ <span id="like-count-2">3500</span></span>
+        </div>
+    </div>
+    <!-- Add more blog-item sections as needed -->
+</div>
+         <!-- Cart Modal -->
+         <div id="cart-modal" class="cart-modal">
+            <div class="cart-modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Your Cart</h2>
+                <div class="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+
+    <!-- Footer (copied from index.html) -->
+ <footer class="newsletter-footer">
+    <div class="footer-content">
+        <div class="footer-texts">
+            <img src="img/logo.png" alt="Brallium Logo" class="footer-logo">
+            <h2>Sign up for our email newsletter!</h2>
+            <p>Stay updated on the latest updates, deals, and more from Brallium. <br><em>No spam, we promise. Unsubscribe at any time.</em></p>
+            <div class="email-input">
+                <input type="email" placeholder="Type your email here">
+                <button type="submit">
+                    <img src="img/arrow.png" alt="Submit">
+                </button>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Terms & Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="purchase.html">Shop</a></li>
+                        <li><a href="material.html">About Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="campaign.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="img/Icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="img/Tiktok.png" alt="TikTok"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-image">
+            <img src="img/Group 20.png" alt="Footer Image">
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2024 Brallium. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Service</a></p>
+    </div>
+</footer>
+
+    <script>
+        let index = 0;
+const slides = document.querySelectorAll('.carousel-item');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = slides.length;
+
+// Automatic slide change every 5 seconds
+let autoSlide = setInterval(goToNextSlide, 5000);
+
+// Event listeners for the dots
+dots.forEach(dot => {
+    dot.addEventListener('click', (e) => {
+        clearInterval(autoSlide);  // Stop auto-rotation when user interacts
+        index = parseInt(e.target.getAttribute('data-slide'));
+        updateCarousel();
+        autoSlide = setInterval(goToNextSlide, 5000);  // Restart auto-rotation
+    });
+});
+
+function goToNextSlide() {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+}
+
+function goToPrevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    const carousel = document.querySelector('.carousel');
+    const width = slides[0].clientWidth;
+    carousel.style.transform = `translateX(${-width * index}px)`;
+
+    // Update active dot
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+
+// Initialize the first dot as active
+dots[index].classList.add('active');
+
+document.addEventListener('DOMContentLoaded', () => {
+    // For each blog item, we store and track the like counts separately
+    document.querySelectorAll('.likes').forEach((likeElement) => {
+        const blogId = likeElement.getAttribute('data-blog');
+        const likeCountElement = document.getElementById(`like-count-${blogId}`);
+        
+        // Get the stored like count or set the default value
+        let likes = localStorage.getItem(`likes-${blogId}`) || likeCountElement.textContent;
+        likeCountElement.textContent = likes;
+
+        // Add event listener for click to increment likes
+        likeElement.addEventListener('click', () => {
+            likes = parseInt(likes) + 1;
+            likeCountElement.textContent = likes;
+            localStorage.setItem(`likes-${blogId}`, likes);
+        });
+
+        // Add hover effect for the heart icon
+        likeElement.addEventListener('mouseover', () => {
+            likeElement.style.color = 'red';
+            likeElement.style.cursor = 'pointer';
+        });
+
+        likeElement.addEventListener('mouseout', () => {
+            likeElement.style.color = ''; // Reset to default
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('.email-input button').addEventListener('click', function(e) {
+          e.preventDefault();
+          const newsletterEmail = document.querySelector('.email-input input').value.trim();
+          if (newsletterEmail && validateEmail(newsletterEmail)) {
+              fetch('https://script.google.com/macros/s/AKfycbzY01VQBhoim0Apv3fGHXJCud7biLlN3aFfV2Ssd0WOdl6xfx0QIfEYbGYFuA3OTBWipw/exec', {
+                  method: 'POST',
+                  mode: 'no-cors',
+                  headers: {
+                      'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({ email: newsletterEmail })
+              })
+              .then(() => alert('Thank you for subscribing!'))
+              .catch(error => console.error('Error:', error));
+          } else {
+              alert('Please enter a valid email address.');
+          }
+      });
+
+      function validateEmail(email) {
+          const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return re.test(String(email).toLowerCase());
+      }
+  });
+
+  let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  let cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
+  function addToCart() {
+      const quantity = parseInt(document.querySelector('.quantity-selector input').value);
+      const product = { name: "Thickened Nipple Cover", price: 16.99, quantity: quantity };
+      cartItems.push(product);
+      cartCount += quantity;
+      updateCartIcon();
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      alert('Product added to cart!');
+  }
+
+  function updateCartIcon() {
+      document.querySelector('.cart-count').textContent = cartCount;
+  }
+
+  function showCartItems() {
+      const cartItemsContainer = document.querySelector('.cart-items');
+      cartItemsContainer.innerHTML = '';
+      cartItems.forEach(item => {
+          const itemElement = document.createElement('div');
+          itemElement.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+          cartItemsContainer.appendChild(itemElement);
+      });
+  }
+
+  const cartModal = document.getElementById('cart-modal');
+  const cartIcon = document.querySelector('.cart-icon');
+  const closeBtn = document.querySelector('.close-btn');
+
+  cartIcon.addEventListener('click', () => {
+      showCartItems();
+      cartModal.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', () => cartModal.style.display = 'none');
+  window.addEventListener('click', (e) => {
+      if (e.target == cartModal) cartModal.style.display = 'none';
+  });
+
+  document.addEventListener('DOMContentLoaded', updateCartIcon);
+    </script>
+</body>
+</html>

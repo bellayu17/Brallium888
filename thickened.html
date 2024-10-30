@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thickened Nipple Cover</title>
+    <link rel="stylesheet" href="styleproduct.css">
+</head>
+<body>
+    <!-- Header and Cart Icon -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Brallium Logo"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="purchase.html">Shop</a></li>
+                <li><a href="material.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="campaign.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="currency-cart">
+            <div class="currency-selection">
+                <img src="img/Us.png" alt="US Flag">
+                <span>USD ($)</span>
+            </div>
+            <div class="user-icons">
+                <img src="img/User.png" alt="User Icon">
+                <div class="cart-container">
+                    <img src="img/Cart.png" alt="Cart Icon" class="cart-icon">
+                    <span class="cart-count">0</span> <!-- Cart item count -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-gallery">
+                <a href="purchase.html" class="back-link" style="text-decoration: none;">← SHOP ALL</a>
+                <div class="gallery-thumbnails">
+                    <img src="img/fragrant1.jpg" alt="Thumbnail 1" onclick="changeMainImage('img/fragrant1.jpg')">
+                    <img src="img/Thickened ver.jpg" alt="Thumbnail 2" onclick="changeMainImage('img/Thickened ver.jpg')">
+                    <img src="img/Thickened ver.jpg" alt="Thumbnail 3" onclick="changeMainImage('img/Thickened ver.jpg')">
+                    <img src="img/Thickened ver.jpg" alt="Thumbnail 4" onclick="changeMainImage('img/Thickened ver.jpg')">
+                </div>
+                <div class="main-image">
+                    <img id="main-product-image" src="img/Thickened ver.jpg" alt="Thickened Nipple Cover">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 id="product-name">Thickened Nipple Cover</h1>
+                <div class="rating">
+                    <span>★★★★★</span>
+                    <span>5.0 (100)</span>
+                </div>
+                <p class="price">$16.99</p>
+                <p>Brallium's Thickened Nipple Cover offers powerful protection to your nipples in any and every situation. Whether you're playing sports, accessorizing, or simply needing a little extra coverage, this cover has got you covered.</p>
+                <p>Comes in a pack of 2.</p>
+
+                <div class="product-options">
+                    <div class="size-selection">
+                        <p><strong>Size:</strong> A-C</p>
+                        <div class="size-options">
+                            <button class="size-button active">A-C</button>
+                            <button class="size-button">D-F</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quantity-selector">
+                    <button class="decrease-btn">-</button>
+                    <input type="text" id="quantity" value="1" readonly>
+                    <button class="increase-btn">+</button>
+                </div>                
+
+                <!-- Add to Cart Button -->
+                 <button class="add-to-cart" id="addToCartBtn">Add to Cart</button>
+                 <!-- Pop-up Modal for Email Collection -->
+<div id="emailPopup" class="popup-modal">
+  <div class="popup-content">
+    <span class="close-popup">&times;</span>
+    <h2>Store your Wishlist</h2>
+    <p>We will store your wishlist products and email you once our online store opens.</p>
+    <form id="userForm">
+      <label for="user_name">Name:</label>
+      <input type="text" id="user_name" name="user_name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <section class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-summary">
+            <span>5.0</span>
+            <span>(100)</span>
+            <span>★★★★★</span>
+            <button class="write-review">WRITE A REVIEW</button>
+        </div>
+        <div class="reviews-container">
+            <div class="review">
+                <div class="review-header">
+                    <span>JANE D.</span>
+                    <span>★★★★★</span>
+                    <span>1 week ago</span>
+                </div>
+                <h4>Review subheading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Enim sit pulvinar tortor enim at. Enim nec duis tempor egestas mattis pharetra sit.</p>
+                <div class="review-thumbnails">
+                    <img src="img/fragrant2.jpg" alt="Review Thumbnail 1">
+                    <img src="img/fragrant2.jpg" alt="Review Thumbnail 2">
+                    <img src="img/fragrant1.jpg" alt="Review Thumbnail 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Popup for writing a review -->
+    <div id="review-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn2">&times;</span>
+            <h2>Write a Review</h2>
+            <form id="review-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+    
+                <label for="images">Upload Images:</label>
+                <input type="file" id="images" name="images" multiple accept="image/*">
+    
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>    
+
+    <!-- Script for Cart Logic -->
+    <script>
+        // Load cart items from localStorage or initialize an empty array
+        let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        let cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
+        // Function to add product to cart
+        function addToCart() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            const product = {
+                name: "Thickened Nipple Cover",
+                price: 16.99,
+                quantity: quantity
+            };
+
+            cartItems.push(product);
+            cartCount += quantity;
+            updateCartIcon();
+
+            // Save updated cart to localStorage
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            alert('Product added to cart!');
+        }
+
+        // Function to update cart icon with item count
+        function updateCartIcon() {
+            const cartIcon = document.querySelector('.cart-count');
+            cartIcon.textContent = cartCount;
+        }
+
+        // Function to show cart items in modal
+        function showCartItems() {
+            const cartItemsContainer = document.querySelector('.cart-items');
+            cartItemsContainer.innerHTML = ''; // Clear previous items
+            cartItems.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+                cartItemsContainer.appendChild(itemElement);
+            });
+        }
+
+        // Event listener for Add to Cart button
+        document.querySelector('.add-to-cart').addEventListener('click', addToCart);
+
+        // Show cart modal when cart icon is clicked
+        const cartModal = document.getElementById('cart-modal');
+        const cartIcon = document.querySelector('.cart-icon');
+        const closeBtn = document.querySelector('.close-btn');
+
+        cartIcon.addEventListener('click', () => {
+            showCartItems();
+            cartModal.style.display = 'block';
+        });
+
+        // Close cart modal
+        closeBtn.addEventListener('click', () => {
+            cartModal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside of it
+        window.addEventListener('click', (e) => {
+            if (e.target == cartModal) {
+                cartModal.style.display = 'none';
+            }
+        });
+
+        // Load cart icon count on page load
+        document.addEventListener('DOMContentLoaded', updateCartIcon);
+
+        // Add to cart button click event
+        document.querySelector('.add-to-cart').addEventListener('click', addToCart);
+        // Show the popup when "Add to Cart" is clicked
+document.getElementById('addToCartBtn').addEventListener('click', function() {
+    document.getElementById('emailPopup').style.display = 'flex';
+});
+
+// Close the popup when the user clicks on the close button
+document.querySelector('.close-popup').addEventListener('click', function() {
+    document.getElementById('emailPopup').style.display = 'none';
+});
+
+// Handle form submission
+document.getElementById('userForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+    
+    // Get the form data
+    const userName = document.getElementById('user_name').value;
+    const userEmail = document.getElementById('email').value;
+    const productName = document.getElementById('product-name').textContent; // Get product name
+    const productQuantity = document.getElementById('quantity').value;
+    
+    // Send data to Google Sheets via Google Apps Script Web App
+    fetch('https://script.google.com/macros/s/AKfycbwemOaPodWaDC4_1PNTdOa6Zguwp4cRv3djZurxe3yJ_8SjY833V9aPrQPm9wDXaywF/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            user_name: userName,
+            email: userEmail,
+            cart_contents: `Product: ${productName}, Quantity: ${productQuantity}`
+        })
+    })
+    .then(response => {
+        alert('Your wishlist has been saved! We will notify you when our store opens.');
+        document.getElementById('emailPopup').style.display = 'none'; // Close the popup
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+//review section
+document.querySelector(".write-review").addEventListener("click", function() {
+    document.getElementById("review-popup").style.display = "flex";
+});
+
+// Close the popup when clicking the close button (X)
+document.querySelector(".close-btn2").addEventListener("click", function() {
+    document.getElementById("review-popup").style.display = "none";
+});
+
+// Submit the review and save it to localStorage
+document.getElementById("review-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const review = document.getElementById("review").value;
+    const files = document.getElementById("images").files;
+
+    let imageLinks = [];
+    for (let i = 0; i < files.length; i++) {
+        const url = URL.createObjectURL(files[i]);
+        imageLinks.push(url);  // Store image URLs
+    }
+
+    // Prepare the review data
+    const reviewData = {
+        name: name,
+        review: review,
+        images: imageLinks,
+        date: new Date().toLocaleDateString()
+    };
+
+    // Get existing reviews from localStorage
+    let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+    reviews.push(reviewData);
+
+    // Save updated reviews array to localStorage
+    localStorage.setItem("reviews", JSON.stringify(reviews));
+
+    // Refresh the displayed reviews
+    loadReviews();
+
+    // Close the popup and reset the form
+    document.getElementById("review-popup").style.display = "none";
+    document.getElementById("review-form").reset();
+});
+
+// Function to load and display reviews from localStorage
+function loadReviews() {
+    const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+    const reviewsContainer = document.querySelector(".reviews-container");
+
+    reviewsContainer.innerHTML = ''; // Clear existing reviews
+
+    reviews.forEach((review, index) => {
+        const images = review.images.map(img => `<img src="${img}" alt="Review Image">`).join('');
+        
+        const newReview = `
+            <div class="review">
+                <div class="review-header">
+                    <span>${review.name.toUpperCase()}</span>
+                    <span>★★★★★</span>
+                    <span>${review.date}</span>
+                    <button class="delete-review" data-index="${index}">Delete</button>
+                </div>
+                <h4>Review subheading</h4>
+                <p>${review.review}</p>
+                <div class="review-thumbnails">
+                    ${images}
+                </div>
+            </div>
+        `;
+        reviewsContainer.insertAdjacentHTML("beforeend", newReview);
+    });
+
+    // Add delete functionality to each delete button
+    document.querySelectorAll('.delete-review').forEach(button => {
+        button.addEventListener('click', function() {
+            const index = this.getAttribute('data-index');
+            deleteReview(index);
+        });
+    });
+}
+
+// Function to delete a review by index
+function deleteReview(index) {
+    let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+    reviews.splice(index, 1);  // Remove the review at the specified index
+    localStorage.setItem("reviews", JSON.stringify(reviews));  // Update localStorage
+    loadReviews();  // Refresh the displayed reviews
+}
+
+// Load the reviews when the page loads
+document.addEventListener('DOMContentLoaded', loadReviews);
+    </script>
+</body>
+</html>

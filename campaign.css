@@ -1,0 +1,475 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    flex: 1; /* Space for the logo on the left */
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Space between the links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .currency-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end; /* Push the icons to the far right */
+    flex: 1; /* Ensure this takes up space on the right */
+  }
+  
+  .currency-selection {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between flag, USD text, and dropdown */
+  }
+  
+  .currency-selection img {
+    width: 20px; /* Adjust icon/flag size */
+    height: auto;
+  }
+  
+  .user-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between user and cart icons */
+  }
+  
+  .user-icons img {
+    width: 18px; /* Smaller size for better clarity */
+    height: auto;
+  }
+
+/* Carousel Styles */
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 520px; /* You can adjust this height as needed */
+    object-fit: scale-down; /* Ensures the image is resized proportionally */
+    border-radius: 10px;
+}
+
+/* Dots */
+.dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Blog Section */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.blog-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.blog-item h2 {
+    font-size: 16px;
+    color: #777;
+}
+
+.blog-item h3 {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.blog-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.blog-item .read-more {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons .likes {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+/* Hover effect for heart icon */
+.likes {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.likes:hover {
+    color: red; /* Change to red when hovered */
+}
+
+/* Footer styles */
+.newsletter-footer {
+    background: linear-gradient(to bottom right, #f0faf2, #d9ece9);
+    padding: 50px 20px;
+    color: #333;
+    position: relative;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-signup .footer-logo {
+    width: 120px; /* Reduced size of logo */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-signup {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .newsletter-signup h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
+  
+  .newsletter-signup p {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 20px;
+  }
+  
+  .email-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .email-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1;
+  }
+  
+  .email-input button {
+    background-color: #38a169;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .email-input button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Footer Styles */
+  .newsletter-footer {
+    background: linear-gradient(to bottom right, #f0faf2, #d9ece9);
+    padding: 50px 20px;
+    color: #333;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-texts {
+    flex: 2;
+  }
+  
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-texts h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
+  
+  .footer-texts p {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 20px;
+  }
+  
+  .email-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .email-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1;
+  }
+  
+  .email-input button {
+    background-color: #38a169;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .email-input button img {
+    width: 21px;
+    height: 21px;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+  }
+  
+  .footer-column h4 {
+    font-size: 18px;
+    color: #2d3748;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: #4a5568;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #38a169;
+  }
+  
+  /* Social Links */
+  .footer-social {
+    margin-top: 20px;
+  }
+  
+  .footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Footer Image */
+  .footer-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer-image img {
+    margin-left: 150px;
+    margin-right: 0px;
+    width: 480px; /* Adjust image size as necessary */
+    height: 560px;
+  }
+  
+  /* Bottom Footer */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: #4a5568;
+  }
+  
+  .footer-bottom a {
+    color: #4a5568;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    color: #38a169;
+  }
+
+  /* Cart Modal */
+  .cart-modal {
+    display: none; /* Hide modal by default */
+    position: fixed; /* Fix modal to screen */
+    z-index: 1000; /* Ensure modal is above other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  }
+  
+  .cart-modal-content {
+    background-color: white;
+    margin: 10% auto; /* Center vertically */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Width of the modal */
+    position: relative;
+  }
+  
+  .close-btn {
+    color: gray;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cart-items {
+    margin: 20px 0;
+  }
+  
+  .checkout-btn {
+    background-color: #284855;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #2f855a;
+  }
+  
+  .cart-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }

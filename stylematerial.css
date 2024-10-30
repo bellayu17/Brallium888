@@ -1,0 +1,449 @@
+/* Header and Navbar */
+header {
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    flex: 1; /* Space for the logo on the left */
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Space between the links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .currency-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end; /* Push the icons to the far right */
+    flex: 1; /* Ensure this takes up space on the right */
+  }
+  
+  .currency-selection {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between flag, USD text, and dropdown */
+  }
+  
+  .currency-selection img {
+    width: 20px; /* Adjust icon/flag size */
+    height: auto;
+  }
+  
+  .user-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between user and cart icons */
+  }
+  
+  .user-icons img {
+    width: 18px; /* Smaller size for better clarity */
+    height: auto;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.our-story .image img {
+    max-width: 100%;
+    height: 600px;
+}
+
+.our-story .text-content {
+    max-width: 600px;
+    margin-left: 2rem;
+}
+
+.our-story h2 {
+    font-size: 2.5rem;
+    color: #002F57;
+    margin-bottom: 1rem;
+}
+
+.our-story p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.our-story strong {
+    font-size: 1.2rem;
+    color: #002F57;
+}
+
+.our-values {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.our-values h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #002F57;
+    margin-bottom: 2rem;
+}
+
+.values-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+
+.values-block h3 {
+    font-size: 1.8rem;
+    color: #005C53;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.values-block ul {
+    list-style: none;
+}
+
+.values-block li {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start; /* Align icon and text side by side */
+}
+
+.values-block strong {
+    font-size: 1.2rem;
+    color: #005C53;
+}
+
+.values-block p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem; /* Add space between the title and description */
+}
+
+/* Updated Icon Styles */
+.icon {
+    width: 80px; /* Icon size as in the provided example */
+    height: 80px;
+    margin-right: 1rem; /* Space between icon and text */
+}
+
+.icon-text-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack title and description vertically */
+}
+
+/* Biodegradable Section */
+.biodegradable {
+    background: radial-gradient(circle, #D6EAD4, #e2e9d0, #cbebec 65%, rgba(180,220,220,1) 100%);
+    color: #284855;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.biodegradable h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.biodegradable p {
+    font-size: 1.2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.comfort-message {
+    background-color: #284855;
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.comfort-message h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.comfort-message p {
+  font-size: 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.purchase {
+  background-color: #fff;
+  color: #284855;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.purchase h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.purchase p {
+  font-size: 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+  /* Footer Styles */
+  .newsletter-footer {
+    background: linear-gradient(to bottom right, #f0faf2, #d9ece9);
+    padding: 50px 20px;
+    color: #333;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-texts {
+    flex: 2;
+  }
+  
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-texts h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
+  
+  .footer-texts p {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 20px;
+  }
+  
+  .email-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .email-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1;
+  }
+  
+  .email-input button {
+    background-color: #38a169;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .email-input button img {
+    width: 21px;
+    height: 21px;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+  }
+  
+  .footer-column h4 {
+    font-size: 18px;
+    color: #2d3748;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: #4a5568;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #38a169;
+  }
+  
+  /* Social Links */
+  .footer-social {
+    margin-top: 20px;
+  }
+  
+  .footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Footer Image */
+  .footer-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer-image img {
+    margin-left: 150px;
+    margin-right: 0px;
+    width: 480px; /* Adjust image size as necessary */
+    height: 560px;
+  }
+  
+  /* Bottom Footer */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: #4a5568;
+  }
+  
+  .footer-bottom a {
+    color: #4a5568;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    color: #38a169;
+  }
+
+   /* Cart Modal */
+.cart-modal {
+  display: none; /* Hide modal by default */
+  position: fixed; /* Fix modal to screen */
+  z-index: 1000; /* Ensure modal is above other elements */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.cart-modal-content {
+  background-color: white;
+  margin: 10% auto; /* Center vertically */
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px; /* Width of the modal */
+  position: relative;
+}
+
+.close-btn {
+  color: gray;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-items {
+  margin: 20px 0;
+}
+
+.checkout-btn {
+  background-color: #284855;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-btn:hover {
+  background-color: #2f855a;
+}
+
+.cart-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: bold;
+}

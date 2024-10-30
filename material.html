@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brallium - About Us</title>
+    <link rel="stylesheet" href="stylematerial.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Brallium Logo"></a>
+        </div> <!-- Closing div for logo -->
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="purchase.html">Shop</a></li>
+                <li><a href="material.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="campaign.html">Blog</a></li>
+            </ul>
+        </nav>
+        
+        <div class="currency-cart">
+            <div class="currency-selection">
+                <img src="img/Us.png" alt="US Flag">
+                <span>USD ($)</span>
+            </div>
+            <div class="user-icons">
+                <img src="img/User.png" alt="User Icon">
+                <div class="cart-container">
+                    <img src="img/Cart.png" alt="Cart Icon" class="cart-icon">
+                    <span class="cart-count">0</span> <!-- Cart item count -->
+                </div>
+            </div>
+        </div>
+    </header>  
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="container">
+            <div class="image">
+                <img src="img/founder.jpg" alt="Founder working at a desk">
+            </div>
+            <div class="text-content">
+                <h2>Our Story</h2>
+                <p>Brallium started when I became more aware of how limited the choice of undergarments was for breast cancer patients. Nipple covers were created for coverage, not protection — but I wanted to improve the inclusivity and functionality of them. <br><br>Experimentation in the lab for months occurred until my material grew mature enough for its first exhibition to the public. 
+
+                    The feedback I received fueled my determination to bring Brallium's products to a wider audience. Seeing this project expand from myself to a group of talented designers and developers was so rewarding. We will continue to build an embracing community for everyone!</p>
+                <p><br><br><strong>Bella Yu,</strong><br>Founder of Brallium</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Our Values Section -->
+<section class="our-values">
+    <h2>Our Values</h2>
+    <div class="values-container">
+        <div class="values-block">
+            <h3>SUSTAINABILITY</h3>
+            <ul>
+                <li>
+                    <img src="img/reusable.png" alt="Reusable Icon" class="icon">
+                    <div class="icon-text-wrapper">
+                    <strong>Reusable</strong>
+                    <p>Can be reused up to 10 times to reduce waste and gently hand-washed to keep it clean.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/biode.png" alt="Biodegradable Icon" class="icon">
+                    <div class="icon-text-wrapper">
+                    <strong>Biodegradable</strong>
+                    <p>Degradation approach is sustainable, avoiding landfill or improper disposal harming the environment.</p>
+                </div>
+                </li>
+                <li>
+                    <img src="img/sus.png" alt="Sustainable Material Icon" class="icon">
+                    <div class="icon-text-wrapper">
+                    <strong>Sustainable Material</strong>
+                    <p>Avoid using silicone to prevent adverse effects on the environment.</p>
+                </div>
+                </li>
+            </ul>
+        </div>
+        <div class="values-block">
+            <h3>INCLUSIVITY & DIVERSITY</h3>
+            <ul>
+                <li>
+                    <img src="img/gender.png" alt="Gender Icon" class="icon">
+                    <div class="icon-text-wrapper">
+                    <strong>Gender</strong>
+                    <p>We provide nipple covers for all genders and destigmatize their use. To have nipples is to be human.</p>
+                </div>
+                </li>
+                <li>
+                    <img src="img/skin.png" alt="Skin Colors Icon" class="icon">
+                    <div class="icon-text-wrapper">
+                    <strong>Skin Colors</strong>
+                    <p>With a wide range of skin tones, you can find the right shade for you.</p>
+                </div>
+                </li>
+                <li>
+                    <img src="img/health.png" alt="Health Icon" class="icon">
+                    <div class="icon-text-wrapper">
+                    <strong>Health</strong>
+                    <p>Our material is flexible and moldable, suitable for breast cancer patients and others.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- Biodegradable Materials Section -->
+    <section class="biodegradable">
+        <h2>What do Brallium's materials mean for your skin?</h2>
+        <p>Our patented and dematogically approved material is made of biostarch, moisturizing water, and skin protection oil. Maintaining the pH balance of human skin to prevent adverse responses from developing after wearing nipple covers.</p>
+    </section>
+    <section class="comfort-message">
+        <h2>Your comfort and security come first, always.</h2>
+        <p>We place your comfort and security as our top priority. The material is flexible and moldable to suit any shape and size. Compared to conventional materials like silicone, our material is seamless to wear and has no constriction.</p>
+    </section>
+    <section class="purchase">
+        <h2>Your purchase impacts the following</h2>
+        <p></p>
+    </section>
+    
+     <!-- Cart Modal -->
+     <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+ <!-- Footer -->
+ <footer class="newsletter-footer">
+    <div class="footer-content">
+        <div class="footer-texts">
+            <img src="img/logo.png" alt="Brallium Logo" class="footer-logo">
+            <h2>Sign up for our email newsletter!</h2>
+            <p>Stay updated on the latest updates, deals, and more from Brallium. <br><em>No spam, we promise. Unsubscribe at any time.</em></p>
+            <div class="email-input">
+                <input type="email" placeholder="Type your email here">
+                <button type="submit">
+                    <img src="img/arrow.png" alt="Submit">
+                </button>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Terms & Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="purchase.html">Shop</a></li>
+                        <li><a href="material.html">About Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="campaign.html">Blog</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="img/Icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="img/Tiktok.png" alt="TikTok"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-image">
+            <img src="img/Group 20.png" alt="Footer Image">
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2024 Brallium. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Service</a></p>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.email-input button').addEventListener('click', function(e) {
+            e.preventDefault();
+            const newsletterEmail = document.querySelector('.email-input input').value.trim();
+            if (newsletterEmail && validateEmail(newsletterEmail)) {
+                fetch('https://script.google.com/macros/s/AKfycbzY01VQBhoim0Apv3fGHXJCud7biLlN3aFfV2Ssd0WOdl6xfx0QIfEYbGYFuA3OTBWipw/exec', {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email: newsletterEmail })
+                })
+                .then(() => alert('Thank you for subscribing!'))
+                .catch(error => console.error('Error:', error));
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+    });
+
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    let cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
+    function addToCart() {
+        const quantity = parseInt(document.querySelector('.quantity-selector input').value);
+        const product = { name: "Thickened Nipple Cover", price: 16.99, quantity: quantity };
+        cartItems.push(product);
+        cartCount += quantity;
+        updateCartIcon();
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        alert('Product added to cart!');
+    }
+
+    function updateCartIcon() {
+        document.querySelector('.cart-count').textContent = cartCount;
+    }
+
+    function showCartItems() {
+        const cartItemsContainer = document.querySelector('.cart-items');
+        cartItemsContainer.innerHTML = '';
+        cartItems.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+            cartItemsContainer.appendChild(itemElement);
+        });
+    }
+
+    const cartModal = document.getElementById('cart-modal');
+    const cartIcon = document.querySelector('.cart-icon');
+    const closeBtn = document.querySelector('.close-btn');
+
+    cartIcon.addEventListener('click', () => {
+        showCartItems();
+        cartModal.style.display = 'block';
+    });
+
+    closeBtn.addEventListener('click', () => cartModal.style.display = 'none');
+    window.addEventListener('click', (e) => {
+        if (e.target == cartModal) cartModal.style.display = 'none';
+    });
+
+    document.addEventListener('DOMContentLoaded', updateCartIcon);
+</script>
+</body>
+</html>
